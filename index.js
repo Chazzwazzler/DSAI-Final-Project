@@ -1,4 +1,4 @@
-const api = "http:144.39.166.24:8080/completion";
+const api = "https://corsproxy.io/?key=2fb7e215&url=http:144.39.166.24:8080/completion";
 
 const systemPrompt = "You are a helpful assistant. Your name is Jimmy. You will speak in a friendly, casual and concise manner. You will only output the answer to the user's prompt.";
 
