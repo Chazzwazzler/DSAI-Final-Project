@@ -1,4 +1,4 @@
-const api = "http:144.39.166.24:8080/completion";
+const api = "https://cors-anywhere.herokuapp.com/http:144.39.166.24:8080/completion";
 
 const systemPrompt = "You are a helpful assistant. Your name is Jimmy. You will speak in a friendly, casual and concise manner. You will only output the answer to the user's prompt.";
 
