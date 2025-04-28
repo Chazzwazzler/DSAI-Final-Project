@@ -1,4 +1,4 @@
-const api = "https://corsproxy.io/?key=2fb7e215&url=http:144.39.166.24:8080/completion";
+const api = "http:144.39.166.24:8080/completion";
 
 const systemPrompt = "You are a helpful assistant. Your name is Jimmy. You will speak in a friendly, casual and concise manner. You will only output the answer to the user's prompt.";
 
@@ -18,7 +18,6 @@ async function textCompletion(user_prompt) {
         }),
         model: "gemma3"
     };
-
     const result = await makeAPICall(options);
     return result;
 }
@@ -53,7 +52,8 @@ function submitPrompt() {
             makeResponseCard(response.content)
         )
         .catch((error) => {
-            console.log(error);
+            console.error("Error:", error);
+            makeResponseCard("Sorry, I couldn't process your request. I am likely processing another user's request. Please try again soon.");
         });
 }
 
