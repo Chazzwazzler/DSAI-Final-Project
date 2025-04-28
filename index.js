@@ -53,7 +53,6 @@ function submitPrompt() {
             makeResponseCard(response.content)
         )
         .catch((error) => {
-            makeResponseCard("Sorry, I couldn't process your request. I am likely processing another user's request. Please try again soon.");
             console.log(error);
         });
 }
